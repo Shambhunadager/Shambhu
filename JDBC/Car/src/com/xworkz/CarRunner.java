@@ -20,7 +20,8 @@ public class CarRunner {
 	  //service.save(dto2);
 	  //service.save(dto3);
 	  //service.save(dto4);
-		service.read();
+		
+		System.out.println(service.read());
 		service.findBtName("Mahindra");
 		service.updateColourByIndex("Block");
 		service.updateSpeedByBrand(40, "Mahindra");
