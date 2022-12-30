@@ -57,7 +57,7 @@ ArrayList<CarDto> list = new ArrayList<CarDto>();
 	@Override
 	public CarDto deleteByBrandandcolour(String brand, String colour) {
 		list.remove(0);
-		
+		System.out.println("data is deleted");
 		return null;
 	}
 	

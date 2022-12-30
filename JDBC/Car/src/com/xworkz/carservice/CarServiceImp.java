@@ -27,10 +27,10 @@ public class CarServiceImp implements CarService {
 	for(CarDto dto:read) {
 		if(name!= null ) {
 			if(dto.getBrand().equals(name) && dto.getBrand().length()>=3) {
-				System.out.println("date is valid");
+				System.out.println("date is found");
 				return dto;
 			}else {
-				System.out.println("data is invalid");
+				System.out.println("data is notfound");
 			}
 		}
 	}

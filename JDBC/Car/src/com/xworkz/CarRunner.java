@@ -24,7 +24,7 @@ public class CarRunner {
 		System.out.println(service.read());
 		service.findBtName("Mahindra");
 		service.updateColourByIndex("Block");
-		service.updateSpeedByBrand(40, "Mahindra");
+		service.updateSpeedByBrand(60, "Mahindra");
 		service.updatePriceByType(1400000, "Basic");
 		service.deleteByIndex(100);
 		service.deleteByBrandandcolour("Hond", "Red");
