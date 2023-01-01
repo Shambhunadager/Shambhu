@@ -46,6 +46,17 @@ public class InstituteServiceImp implements InstituteService {
 			
 		return null;
 	}
+	
+	
+	@Override
+	public InstituteDto findBylocationandrating(String location, int rating) {
+	if(location!=null && location.length()>=8) {
+		if(rating>=2 && rating<=8) {
+			return repo.findBylocationandrating(location, rating);
+		}
+	}
+		return null;
+	}
 
 	@Override
 	public boolean updateLocationByIndex(String location, int index) {
@@ -79,14 +90,6 @@ public class InstituteServiceImp implements InstituteService {
 
 	}
 
-	@Override
-	public InstituteDto findBylocationandrating(String location, int rating) {
-	if(location!=null && location.length()>=8) {
-		if(rating>=2 && rating<=8) {
-			return repo.findBylocationandrating(location, rating);
-		}
-	}
-		return null;
-	}
+	
 
 }
